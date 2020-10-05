@@ -1,0 +1,81 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <style>
+            .container {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+            }
+
+            .wifi4eulogo-img {
+                max-height: 80%;
+            }
+
+            .login-btn {
+                background-color: #4c76af;
+                color: white;
+                margin-top: 20px;
+                padding: 15px 30px;
+                font-size: 20px;
+                border-radius: 30px;
+                border: none;
+                box-shadow: 0 3px 9px #999;
+            }
+
+            .login-btn:focus {  
+                outline: none;
+            }
+
+            .login-btn:active {  
+                background-color: #2b4c8e;
+                transform: translateY(2px);
+            }
+        </style>
+        
+        <script type="text/javascript">
+            var wifi4euTimerStart = Date.now();
+            // Configure your Network Identifier
+            var wifi4euNetworkIdentifier = "123e4567-e89b-12d3-a456-426655440000";
+            // Configure your Portal Language
+            var wifi4euLanguage = "en";
+            // Remove this line
+            var selftestModus = true;
+        </script>
+        <script type="text/javascript" src="https://collection.wifi4eu.ec.europa.eu/wifi4eu.min.js"></script>
+
+        <script type="text/javascript">
+            function GetURLParameter(sParam)
+            {
+                var sPageURL = window.location.search.substring(1);
+                var sURLVariables = sPageURL.split('&');
+                for (var i = 0; i < sURLVariables.length; i++) 
+                {
+                    var sParameterName = sURLVariables[i].split('=');
+                    if (sParameterName[0] == sParam) 
+                    {
+                        return sParameterName[1];
+                    }
+                }
+            }
+    
+            function login(){    
+                window.location.href = decodeURIComponent(GetURLParameter("actionurl"));
+            }
+        </script>
+
+        <title>WiFi4EU Login</title>
+    </head>
+    
+    <body>
+    <div class="container">
+        <img id="wifi4eulogo" class="wifi4eulogo-img"/>
+        <br/>
+        <button onclick="login()" class="login-btn">Continue to Internet</button>
+    </div>
+        
+    </body>
+</html>
