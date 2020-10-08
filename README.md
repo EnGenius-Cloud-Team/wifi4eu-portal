@@ -1,5 +1,14 @@
 # WiFi4EU - Portal
-EnGenius Cloud WiFi4EU Portal Sample
+
+
+## Overview
+WiFi4EU is a free Wi-Fi hotspot service promoted by European Comission to provide connectivity for citizens and visitors in public spaces such as parks, squares, public building, libraries, health centres, and museums everywhere in Europe. The WiFi4EU programme requires the use of a captive portal that connects to the WiFi4EU metrics infrastructure. More information about this is available here: https://ec.europa.eu/digital-single-market/en/news/wifi4eu-tracking-snippet-guideline
+
+EnGenius Cloud and ezMaster provide managed WiFi with the ability to host your own "Splash Page", which is a captive portal service for authenticating users to join the network. This concept is called an External Captive Portal. 
+
+EnGenius supports two ways to work with external splash page: **click-through** and **sign-on**. This application takes the click-through as an example.
+
+To get started just host these files in the public directory on any web server such as nginx, Apache or Firebase Hosting and configure your SSID to use your server.
 
 ## Installation
 * Edit splash.html to modify two variables **wifi4euNetworkIdentifier** and **wifi4euLanguage**, and remove **var selftestModus = true;**.
