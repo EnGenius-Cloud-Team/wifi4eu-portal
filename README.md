@@ -22,3 +22,6 @@ To get started just host these files in the public directory on any web server s
     * Select Splash Page Tab
         * Splash Page Type --> Select External Splash Page URL
         * Point the "Customer URL" to the HTML file. ex: `https://yourserver/splash.html`
+
+## Screenshot
+![image](screenshot.jpg)
