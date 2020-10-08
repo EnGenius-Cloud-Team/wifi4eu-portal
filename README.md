@@ -10,6 +10,9 @@ EnGenius Cloud WiFi4EU Portal Sample
     * Authentication Type --> Select Click-through
     * Advanced Setting --> Walled Garden
         * Add the domain of the WiFi4EU suporting resources  **collection.wifi4eu.ec.europa.eu**
+        <img src="./media/WalledGarden.png" width="600"/>
+ 
     * Select Splash Page Tab
         * Splash Page Type --> Select External Splash Page URL
         * Point the "Customer URL" to the HTML file. ex: `https://yourserver/splash.html`
+        <img src="./media/SplashPage.png" width="600"/> 
