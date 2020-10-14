@@ -19,9 +19,12 @@ To get started just host these files in the public directory on any web server s
     * Authentication Type --> Select Click-through
     * Advanced Setting --> Walled Garden
         * Add the domain of the WiFi4EU suporting resources  **collection.wifi4eu.ec.europa.eu**
+        <img src="./media/WalledGarden.png" width="600"/>
+ 
     * Select Splash Page Tab
         * Splash Page Type --> Select External Splash Page URL
         * Point the "Customer URL" to the HTML file. ex: `https://yourserver/splash.html`
+        <img src="./media/SplashPage.png" width="600"/> 
 
 ## Screenshot
 ![image](screenshot.jpg)
